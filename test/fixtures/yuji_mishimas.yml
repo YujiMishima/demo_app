@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  yuji1510@gmail.com: MyString
+
+two:
+  yuji1510@gmail.com: MyString

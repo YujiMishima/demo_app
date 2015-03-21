@@ -1,0 +1,21 @@
+<%= form_for(@yuji_mishima) do |f| %>
+  <% if @yuji_mishima.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@yuji_mishima.errors.count, "error") %> prohibited this yuji_mishima from being saved:</h2>
+
+      <ul>
+      <% @yuji_mishima.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :yuji1510@gmail.com %><br>
+    <%= f.text_field :yuji1510@gmail.com %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

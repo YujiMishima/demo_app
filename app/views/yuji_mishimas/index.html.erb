@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Yuji Mishimas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Yuji1510@gmail.com</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @yuji_mishimas.each do |yuji_mishima| %>
+      <tr>
+        <td><%= yuji_mishima.yuji1510@gmail.com %></td>
+        <td><%= link_to 'Show', yuji_mishima %></td>
+        <td><%= link_to 'Edit', edit_yuji_mishima_path(yuji_mishima) %></td>
+        <td><%= link_to 'Destroy', yuji_mishima, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Yuji mishima', new_yuji_mishima_path %>
